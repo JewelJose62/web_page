@@ -6,42 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medical Core</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 
 <body>
-    <div class="section_colorbg">
-        
 
-            <header>
 
+    <header class="section_colorbg">
+        <div class="main_container">
             <div class="nav_bar">
-                <div class="brandname">
-                    <h3>Medical Core</h3>
+                <input type="checkbox" id="check">
+                    <label for="check" class="hambug">
+                        <span class="material-symbols-outlined">
+                            menu
+                        </span>
+                    </label>
+                    <label for="check" class="close">
+                        <span class="material-symbols-outlined">
+                            close
+                        </span>
+                    </label>
+                <div class="title_bar">
+                    
+                    <div class="brandname">Medicore</div>
                 </div>
-                <div class="bar">
-                <div class="nav_bar_link">
+                <div class="nav_bar_links">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Product</a></li>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">Contact</a></li>
-
+                        <li class="nav"><a href="#">Home</a></li>
+                        <li class="nav_product"><a href="#">Product <span class="material-symbols-outlined">
+                            arrow_drop_down
+                            </span></a>
+                            <nav class="dropdown">
+                                <ul>
+                                    <li><a href="#">product1</a></li>
+                                    <li><a href="#">product2</a></li>
+                                    <li><a href="#">product3</a></li>
+                                    <li><a href="#">product4</a></li>
+                                    
+                                </ul>
+                            </nav>
+                        </li>
+                        <li class="nav"><a href="#">Pricing</a></li>
+                        <li class="nav"><a href="#">Contact</a></li>
+                        <button class="transparent_btn ham" >Login</button>
                     </ul>
                 </div>
                 <div class="butn">
                     <button class="transparent_btn">Login</button>
-                    <button class=" filled_btn">Join Us   <i class="fa-solid fa-arrow-right"></i></button>
+                    <button class="filled_btn ">Join Us <span
+                            class="material-symbols-outlined">arrow_forward</span></button>
                 </div>
-                </div>
-                </div>
-                </header>
-            
-            <banner class="banner">
-                <div class="container1">
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- contextpage -->
+
+    <section class="section_colorbg">
+        <banner class="banner">
+            <div class="container1">
                 <div class="bannertext">
                     <div class="bannerwelcome">
                         <h6>Welcome</h6>
@@ -53,100 +85,113 @@
                         <p>Get your best looking smile now!</p>
                     </div>
                     <div class="butn">
-                        <div><button class="filled_btn">Join Us</button></div>
+                        <div><button class="filledbtn">Join Us</button></div>
                         <div></div><button class="border_btn">Learn More</button>
                     </div>
                 </div>
 
+
                 <div class="bannerimg">
                     <img src="./images/col-md-6.png" alt="officer">
                 </div>
-                </div>
-            </banner>
-            
-        
-    </div>
+            </div>
+        </banner>
+    </section>
+
+
+
     <!-- context2 -->
 
 
-    <div class="section_whitebg">
-        <div class="container flex">
-            <div class="context2">
-                <div class="line">
-                </div>
-                <h1>Our Activity</h1>
-                <p>Problems trying to resolve the conflict between 
-                    the two major realms of Classical physics:
-                    Newtonian mechanics </p>
-                <button class="transparent_btn">Learn More ></button>
-            </div>
-
-            <div class="card">
-                <div class="card1">
-                    <div class="icons">
-                        
-                    <i class="fa-solid fa-heart-pulse"></i>
+    <section class="section_whitebg">
+        <div class="container">
+            <div class="promo">
+                <div class="introduction">
+                    <div class="line">
                     </div>
-                    <div>
-                        <h3>Book Now</h3>
-                    </div>
-                    <div class="line_one"></div>
-                    <p>The gradual 
-                        accumulation of
-                        information about </p>
-
-
-                </div>
-                <div class="card2">
-                    <div class="icons">
-
-                        <i class="fa-solid fa-staff-snake"></i>
-                    </div>
-
-                    <div>
-                        <h3>Health Queries</h3>
-                    </div>
-                    <div class="line_two"></div>
-                    <p>The gradual 
-                        accumulation of
-                        information about </p>
+                    <h2>Our Activity</h2>
+                    <p>Problems trying to resolve the conflict between
+                        the two major realms of Classical physics:
+                        Newtonian mechanics </p>
+                    <button class="transparent_btn">Learn More <span class="material-symbols-outlined">
+                            arrow_forward_ios
+                        </span>
+                    </button>
                 </div>
 
+                <div class="intro_grids">
+                    <div class="intro_grid">
+                        <div class="icons">
+
+                            <i class="fa-solid fa-heart-pulse"></i>
+                        </div>
+                        <div>
+                            <h3>Book Now</h3>
+                        </div>
+                        <div class="line_one"></div>
+                        <p>The gradual
+                            accumulation of
+                            information about </p>
+
+
+                    </div>
+                    <div class="intro_grid">
+                        <div class="icons">
+
+                            <i class="fa-solid fa-staff-snake"></i>
+                        </div>
+
+                        <div>
+                            <h3>Health Queries</h3>
+                        </div>
+                        <div class="line_two"></div>
+                        <p>The gradual
+                            accumulation of
+                            information about </p>
+                    </div>
+
+                </div>
             </div>
         </div>
-    </div>
+
+    </section>
     <!-- context3 -->
 
-    <div class="section_whitebg">
+    <section class="section_whitebg">
         <div class="container">
-            <div class="context3">
+            <div class="Activity">
                 <div class="images">
                     <img src="./images/doctor.png" alt="">
                 </div>
-                <div class="context">
+                <div class="introduction">
                     <div class="line"></div>
                     <h2>Meet Our Experts</h2>
-                    <p>Problems trying to resolve the conflict between 
+                    <p>Problems trying to resolve the conflict between
                         the two major realms of Classical physics:
                         Newtonian mechanics </p>
-                    <button class="transparent_btn"> Learn More ></button>
+                    <button class="transparent_btn"> Learn More <span class="material-symbols-outlined">
+                            arrow_forward_ios
+                        </span></button>
                 </div>
 
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- context4 -->
-    <div class="section_whitebg">
+    <section class="section_whitebg">
         <div class="container">
-            <div class="context4">
+
+            <div class="product_cart">
+
                 <div class="main_content">
                     <h6>Practice Advice</h6>
                     <h2>The Best Reference</h2>
-                    <p>Problems trying to resolve the conflict between 
-                    the two major realms of Classical physics: Newtonian mechanics </p>
+                    <p>Problems trying to resolve the conflict between
+                        the two major realms of Classical physics: Newtonian mechanics </p>
 
                 </div>
+
                 <div class="more_informations">
                     <div class="cart_1">
                         <div class="info">
@@ -172,14 +217,14 @@
                                 </div>
                             </div>
                             <h3>Quick examination</h3>
-                            <p>We focus on ergonomics and 
+                            <p>We focus on ergonomics and
                                 meeting you where you work. It's
                                 only a keystroke away.</p>
                             <div class="downloads">
                                 <div class="sale">
                                     <img src="images/Frame.png" alt="">
                                 </div>
-                                <h4>15 Sales</h4>
+                                <p>15 Sales</p>
                             </div>
                             <div class="dollars">
                                 <div class="price">$16.48</div>
@@ -193,7 +238,7 @@
                                 </div>
                                 <div class="lesson">
                                     <div class="icon"><i class="fa-solid fa-book"></i></div>
-                                
+
                                     <div class="flag"></div>
                                     <p>64 Lessons</p>
                                 </div>
@@ -203,12 +248,13 @@
                                 </div>
 
                             </div>
-                            <button class="btn"> Learn More ></button>
+                            <button class="btn"> Learn More <span class="material-symbols-outlined">
+                                    arrow_forward_ios</button>
 
                         </div>
                     </div>
 
-                    <div class="cart_2">
+                    <div class="cart_1">
 
                         <div class="info">
 
@@ -233,7 +279,7 @@
                                 </div>
                             </div>
                             <h3>Painless Procedures</h3>
-                            <p>We focus on ergonomics and 
+                            <p>We focus on ergonomics and
                                 meeting you where you work. It's
                                 only a keystroke away.</p>
                             <div class="downloads">
@@ -250,12 +296,12 @@
                                 <div class="time">
                                     <div class="icon"><i class="fa-regular fa-clock"></i>
                                     </div>
-                                    <p>22h..</p>
+                                    <p>22h...</p>
                                 </div>
 
                                 <div class="lesson">
-                                 <div class="icon"><i class="fa-solid fa-book"></i></div>
-                                
+                                    <div class="icon"><i class="fa-solid fa-book"></i></div>
+
                                 </div>
                                 <p>64 Lessons</p>
 
@@ -265,7 +311,8 @@
                                 </div>
 
                             </div>
-                            <button class="btn"> Learn More ></button>
+                            <button class="btn"> Learn More <span class="material-symbols-outlined">
+                                    arrow_forward_ios</button>
 
                         </div>
 
@@ -274,293 +321,297 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- context 5 -->
+    <div class="section_whitebg">
+        <div class="container">
+            <div class="review">
+                <div class="main_content">
+
+                    <h6>Testimonials</h6>
+                    <h2>See Our Impressions</h2>
+                    <p>Problems trying to resolve the conflict between
+                        the two major realms of Classical physics: Newtonian mechanics </p>
+                </div>
+                <div class="Testimonial">
+                    <div class="Testimonial_card1">
+                        <div class="imag">
+                            <img src="images/circle sec2.png" alt="image">
+                        </div>
+                        <div class="content_1">
+                            <p>Slate helps you see how many more days
+                                you need to work to reach your financial
+                                goal for the month and year.</p>
+                            <div class="star">
+                                <div class="icon_star"><i class="fa-solid fa-star"></i> </div>
+                                <div class="icon_star"><i class="fa-solid fa-star"></i> </div>
+                                <div class="icon_star"><i class="fa-solid fa-star"></i> </div>
+                                <div class="icon_star"><i class="fa-solid fa-star"></i> </div>
+                                <div class="icon_str"><i class="fa-regular fa-star"></i> </div>
+
+                            </div>
+                            <div class="details">
+                                <div class="name">
+                                    <h3>Regina Miles</h3>
+                                </div>
+                                <div class="position">
+                                    <h5>Designer</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="Testimonial_card2">
+                        <div class="imag">
+                            <img src="images/circle sec-.png " alt="image">
+                        </div>
+                        <div class="content_1">
+                            <p>Slate helps you see how many more days
+                                you need to work to reach your financial
+                                goal for the month and year.</p>
+                            <div class="star">
+                                <div class="icon_star"><i class="fa-solid fa-star"></i> </div>
+                                <div class="icon_star"><i class="fa-solid fa-star"></i> </div>
+                                <div class="icon_star"><i class="fa-solid fa-star"></i> </div>
+                                <div class="icon_star"><i class="fa-solid fa-star"></i> </div>
+                                <div class="icon_str"><i class="fa-regular fa-star"></i></div>
+
+                            </div>
+                            <div class="details">
+                                <div class="name">
+                                    <h3>Regina Miles</h3>
+                                </div>
+                                <div class="position">
+                                    <h5>Designer</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
-            </div>
+        </div>
+    </div>
+    </div>
 
+    <!-- context 6 -->
+    <div class="section_whitebg">
+        <div class="container">
+            <div class="context">
+                <div class="main_content">
 
-            <!-- context 5 -->
-            <div class="section_whitebg">
-                <div class="container">
-                    <div class="context5">
-                        <div class="main_content">
-                            <div class="main-text">
-                            <h6>Testimonials</h6>
-                            <h2>See Our Impressions</h2>
-                            <p>Problems trying to resolve the conflict between
-                                the two major realms of Classical physics: Newtonian mechanics </p>
+                    <h6>Team</h6>
+                    <h2>Our Team</h2>
+                    <p>Problems trying to resolve the conflict between
+                        the two major realms of Classical physics: Newtonian mechanics </p>
+                </div>
+                <div class="user_card">
+                    <div class="user_card1">
+                        <div class="photo">
+                            <img src="images/user-cover-1.png" alt="image">
+                        </div>
+                        <div class="card_content">
+                            <div class="staffs">
+                                <h5>Julian Jameson</h5>
+                                <h6>Profession</h6>
                             </div>
-                            <div class="Testimonial">
-                                <div class="Testimonial_card1">
-                                    <div class="imag">
-                                        <img src="images/circle sec2.png" alt="image">
-                                    </div>
-                                    <div class="content_1">
-                                        <p>Slate helps you see how many more days 
-                                            you need to work to reach your financial 
-                                            goal for the month and year.</p>
-                                        <div class="star">
-                                            <div class="icon_star"><i class="fa-solid fa-star"></i> </div>
-                                            <div class="icon_star"><i class="fa-solid fa-star"></i> </div>
-                                            <div class="icon_star"><i class="fa-solid fa-star"></i> </div>
-                                            <div class="icon_star"><i class="fa-solid fa-star"></i> </div>
-                                            <div class="icon_str"><i class="fa-regular fa-star"></i></div>
-
-                                        </div>
-                                        <div class="details">
-                                            <div class="name">
-                                                <h3>Regina Miles</h3>
-                                            </div>
-                                            <div class="position">
-                                                <h5>Designer</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="Testimonial_card2">
-                                    <div class="imag">
-                                        <img src="images/circle sec-.png "alt="image">
-                                    </div>
-                                    <div class="content_1">
-                                        <p>Slate helps you see how many more days 
-                                            you need to work to reach your financial 
-                                            goal for the month and year.</p>
-                                        <div class="star">
-                                            <div class="icon_star"><i class="fa-solid fa-star"></i> </div>
-                                            <div class="icon_star"><i class="fa-solid fa-star"></i> </div>
-                                            <div class="icon_star"><i class="fa-solid fa-star"></i> </div>
-                                            <div class="icon_star"><i class="fa-solid fa-star"></i> </div>
-                                            <div class="icon_str"><i class="fa-regular fa-star"></i></div>
-
-                                        </div>
-                                        <div class="details">
-                                            <div class="name">
-                                                <h3>Regina Miles</h3>
-                                            </div>
-                                            <div class="position">
-                                                <h5>Designer</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="social_media">
+                                <div class="icon"><i class="fa-brands fa-facebook"></i></div>
+                                <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+                                <div class="icon"><i class="fa-brands fa-twitter"></i></div>
                             </div>
-
 
                         </div>
                     </div>
+
+                    <div class="user_card1">
+                        <div class="photo">
+                            <img src="images/user-cover-2.png" alt="image">
+                        </div>
+                        <div class="card_content">
+                            <div class="staffs">
+                                <h5>Julian Jameson</h5>
+                                <h6>Profession</h6>
+                            </div>
+                            <div class="social_media">
+                                <div class="icon"><i class="fa-brands fa-facebook"></i></div>
+                                <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+                                <div class="icon"><i class="fa-brands fa-twitter"></i></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="user_card1">
+                        <div class="photo">
+                            <img src="images/user-cover-3.png" alt="image">
+                        </div>
+                        <div class="card_content">
+                            <div class="staffs">
+                                <h5>Julian Jameson</h5>
+                                <h6>Profession</h6>
+                            </div>
+                            <div class="social_media">
+                                <div class="icon"><i class="fa-brands fa-facebook"></i></div>
+                                <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+                                <div class="icon"><i class="fa-brands fa-twitter"></i></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="user_card1">
+                        <div class="photo">
+                            <img src="images/user-cover-4.png" alt="image">
+                        </div>
+                        <div class="card_content">
+                            <div class="staffs">
+                                <h5>Julian Jameson</h5>
+                                <h6>Profession</h6>
+                            </div>
+                            <div class="social_media">
+                                <div class="icon"><i class="fa-brands fa-facebook"></i></div>
+                                <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+                                <div class="icon"><i class="fa-brands fa-twitter"></i></div>
+                            </div>
+
+                        </div>
+                    </div>
+
                 </div>
             </div>
+        </div>
+    </div>
+    </div>
+    <!-- context 7 -->
+    <div class="section_colorbg">
+        <div class="container">
+            <div class="login_page">
+                <div class="login_tittle">
+                    <h6 class="top">Newsletter</h6>
+                    <h2 class="tittle">JOIN US</h2>
+                    <p>Problems trying to resolve the conflict between
+                        the two major realms of Classical physics: Newtonian mechanics </p>
+                </div>
+                <form class="form">
+                    <input class="email_sub" type="text" placeholder="your email">
 
-            <!-- context 6 -->
-             <div class="section_whitebg">
-                <div class="container">
-                    <div class="context6">
-                        <div class="main_content">
-                            <div class="main-text">
-                                <h6>Team</h6>
-                                <h1>Our Team</h1>
-                                <p>Problems trying to resolve the conflict between
-                                    the two major realms of Classical physics: Newtonian mechanics </p>
-                                </div>
-                                <div class="user_card">
-                                    <div class="user_card1">
-                                        <div class="photo">
-                                        <img src="images/user-cover-1.png" alt="image">
-                                        </div>
-                                        <div class="card_content">
-                                            <div class="staffs">
-                                            <h5>Julian Jameson</h5>
-                                            <h6>Profession</h6>
-                                            </div>
-                                            <div class="social_media">
-                                            <div class="icon"><i class="fa-brands fa-facebook"></i></div>
-                                            <div class="icon"><i class="fa-brands fa-instagram"></i></div>
-                                            <div class="icon"><i class="fa-brands fa-twitter"></i></div>
-                                        </div>
+                    <button class="fill_btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- context 8 -->
+    <div class="section_whitebg">
+        <div class="container">
+            <div class="last_context">
+                <div class="company_info">
+                    <div class="co_details">
+                        <h5>Company Info</h5>
 
-                                    </div>
-                                </div>
 
-                                    <div class="user_card1">
-                                        <div class="photo">
-                                        <img src="images/user-cover-2.png" alt="image">
-                                        </div>
-                                        <div class="card_content">
-                                            <div class="staffs">
-                                            <h5>Julian Jameson</h5>
-                                            <h6>Profession</h6>
-                                            </div>
-                                            <div class="social_media">
-                                            <div class="icon"><i class="fa-brands fa-facebook"></i></div>
-                                            <div class="icon"><i class="fa-brands fa-instagram"></i></div>
-                                            <div class="icon"><i class="fa-brands fa-twitter"></i></div>
-                                        </div>
-
-                                    </div>
-                                    </div>
-
-                                    <div class="user_card1">
-                                        <div class="photo">
-                                        <img src="images/user-cover-3.png" alt="image">
-                                        </div>
-                                        <div class="card_content">
-                                            <div class="staffs">
-                                            <h5>Julian Jameson</h5>
-                                            <h6>Profession</h6>
-                                            </div>
-                                            <div class="social_media">
-                                            <div class="icon"><i class="fa-brands fa-facebook"></i></div>
-                                            <div class="icon"><i class="fa-brands fa-instagram"></i></div>
-                                            <div class="icon"><i class="fa-brands fa-twitter"></i></div>
-                                        </div>
-
-                                    </div>
-                                    </div>
-
-                                    <div class="user_card1">
-                                        <div class="photo">
-                                        <img src="images/user-cover-4.png" alt="image">
-                                        </div>
-                                        <div class="card_content">
-                                            <div class="staffs">
-                                            <h5>Julian Jameson</h5>
-                                            <h6>Profession</h6>
-                                            </div>
-                                            <div class="social_media">
-                                            <div class="icon"><i class="fa-brands fa-facebook"></i></div>
-                                            <div class="icon"><i class="fa-brands fa-instagram"></i></div>
-                                            <div class="icon"><i class="fa-brands fa-twitter"></i></div>
-                                        </div>
-
-                                    </div>
-                                </div>
+                        <div class="link">
+                            <a href="#">About Us</a>
+                            <a href="#">Carrier</a>
+                            <a href="#">We are hiring</a>
+                            <a href="#">Blog</a>
 
                         </div>
                     </div>
-                </div>
-             </div>
-             </div>
-<!-- context 7 -->
-             <div class="section_colorbg">
-                <div class="container">
-                    <div class="login_page">
-                        <div class="login_tittle">
-                            <h6 class="top">Newsletter</h6>
-                            <h2 class="tittle">JOIN US</h2>
-                            <p>Problems trying to resolve the conflict between 
-                                the two major realms of Classical physics: Newtonian mechanics </p>
-                        </div>
-                        <form class="form">
-                            <input class="email_sub"  type="text" placeholder="your email">
-                            
-                            <button class="fill_btn">Subscribe</button>
-                        </form>
-                    </div>
-                </div>
-             </div>
-<!-- context 8 -->
-             <div class="section_whitebg">
-                <div class="container">
-                    <div class="last_context">
-                        <div class="company_info">
-                            <div class="co_details">
-                                <h5>Company Info</h5>
-
-                            
-                            <div class="link">
-                                <a href="#">About Us</a>
-                                <a href="#">Carrier</a>
-                                <a href="#">We are hiring</a>
-                                <a href="#">Blog</a>
-
-                            </div>
-                            </div>
-                            <div class="co_details">
-                                <h5>Legal</h5>
-
-                            
-                            <div class="link">
-                                <a href="#">About Us</a>
-                                <a href="#">Carrier</a>
-                                <a href="#">We are hiring</a>
-                                <a href="#">Blog</a>
-
-                            </div>
-                            </div>
-                            <div class="co_details">
-                                <h5>Features</h5>
-
-                    
-                            <div class="link">
-                                <a href="#">Business Marketing</a>
-                                <a href="#">User Analytic</a>
-                                <a href="#">Live Chat</a>
-                                <a href="#">Unlimited Support</a>
-
-                            </div>
-                            </div>
-                            <div class="co_details">
-                                <h5>Resources</h5>
-
-                        
-                            <div class="link">
-                                <a href="#">IOS & Android</a>
-                                <a href="#">watch a demo</a>
-                                <a href="#">Customers</a>
-                                <a href="#">API</a>
-
-                            </div>
-                            </div>
-                            
-                            
-
-                            <div class="co_detailsmedia">
-                                <h5>Get in touch</h5>
-                                <div class="links">
-                                    <a href="#"><span class="material-symbols-outlined">
-                                        call
-                                        </span>
-                                        (480) 555-0103 </a>
-
-                                        <a href="#"><span class="material-symbols-outlined">
-                                            location_on
-                                            </span>
-                                            4517 Washington Ave. Manchester, 
-                                            Kentucky 39495</a>
-
-                                            <a href="#"><span class="material-symbols-outlined">
-                                                mail
-                                                </span>
-                                                debra.holt@example.com</a>
-                            
-
-                                    
-    
-
-                                </div>
-                            </div>
+                    <div class="co_details">
+                        <h5>Legal</h5>
 
 
-
-                        </div>
+                        <div class="link">
+                            <a href="#">About Us</a>
+                            <a href="#">Carrier</a>
+                            <a href="#">We are hiring</a>
+                            <a href="#">Blog</a>
 
                         </div>
                     </div>
-                </div>
-             <!-- footer -->
+                    <div class="co_details">
+                        <h5>Features</h5>
 
-             <div class="footer">
-                <div class="container">
-                    <div class="end">
-                        <h6>Made With Love By Figmaland All Right Reserved </h6>
-                        <div class="s_media">
-                            <div class="icon"><i class="fa-brands fa-facebook"></i></div>
-                            <div class="icon"><i class="fa-brands fa-instagram"></i></div>
-                          <div class="icon"><i class="fa-brands fa-twitter"></i></div>
+
+                        <div class="link">
+                            <a href="#">Business Marketing</a>
+                            <a href="#">User Analytic</a>
+                            <a href="#">Live Chat</a>
+                            <a href="#">Unlimited Support</a>
+
                         </div>
                     </div>
+                    <div class="co_details">
+                        <h5>Resources</h5>
+
+
+                        <div class="link">
+                            <a href="#">IOS & Android</a>
+                            <a href="#">watch a demo</a>
+                            <a href="#">Customers</a>
+                            <a href="#">API</a>
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="co_detailsmedia">
+                        <h5>Get in touch</h5>
+                        <div class="links">
+                            <a href="#"><span class="material-symbols-outlined">
+                                    call
+                                </span>
+                                (480) 555-0103 </a>
+
+                            <a href="#"><span class="material-symbols-outlined">
+                                    location_on
+                                </span>
+                                4517 Washington Ave. Manchester,
+                                Kentucky 39495</a>
+
+                            <a href="#"><span class="material-symbols-outlined">
+                                    mail
+                                </span>
+                                debra.holt@example.com</a>
+
+
+
+
+
+                        </div>
+                    </div>
+
+
+
                 </div>
-             </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+
+    <div class="footer">
+        <div class="container">
+            <div class="end">
+                <h6>Made With Love By Figmaland All Right Reserved </h6>
+                <div class="s_media">
+                    <div class="icon"><i class="fa-brands fa-facebook"></i></div>
+                    <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+                    <div class="icon"><i class="fa-brands fa-twitter"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
 </body>
 
