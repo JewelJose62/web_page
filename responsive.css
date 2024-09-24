@@ -12,6 +12,10 @@
         text-align: center;
     }
 
+    .container{
+        padding: 60px 0px;
+    }
+
     .bannerimg{
         display: none;
     }
@@ -182,50 +186,106 @@
 
  }
 
- @media only screen and (max-width:800px)
+ /* @media only screen and (max-width:800px)
  {
-    .nav_bar_links ul{
+    /* .nav_bar_links ul{
     
 
-    }
+    } */
 
-    ul .dropdown{
+    /* ul .dropdown{
         visibility: hidden;
         position: absolute;
-    }
+    } */
 
-    .dropdown:hover{
-        background-color: white;
-        color: black;
-        
-    }
+    
+ 
+ @media only screen and (min-width:781px) {
+    .dropdown ul{
+        visibility: hidden;    
+        position: absolute;
+        display:none;
+
+        }
+   .nav_product:hover .dropdown ul {
+        visibility: visible;   
+         background-color:#1BA0AB;
+            color:#E6E6E6;
+            padding:0px 10px;
+            display: block;
+    
  }
+ .dropdown:hover{
+    background-color: white;
+    color: black;
+    
+}
+}
 
  @media only screen and (max-width:780px){
- 
+    
+
     .nav_bar_links ul{
         display:flex;
         flex-direction: column;
         position: fixed;
-        background-color:cadetblue;
+        background-color:#FFF5F0;;
         /* color: black; */
-        margin-top: 60px;
-        top: 10px;
-        left: -300px;
+        margin-top: 10px;
+        top: 80px;  
+        left:-100%;
         padding: 30px 20px 30px 20px;
         z-index: 1;
         /* visibility: visible; */
-        height: 77vw;
-        width: 164px;
+        height: 100vh;
+        width: 100%;
         align-items: center;
-        gap: 20px;
+        gap: 50px;
+        transition: all 400ms;
+        font-size: 24px;
+        
+    }
 
+    .nav_bar_links ul li a:hover{
+        padding: unset;
+        background: unset;
+        color:#1BA0AB;
+        border: unset;
+        outline: unset;
+        border-radius: unset;
+        font-weight: unset;
+    }
 
+    .ham:hover{
+        color: #1BA0AB;
+
+    }
+    .dropdown ul{
+        display: flex;
+        flex-direction: column;
+        background-color:transparent;
+        align-items: center;
+        width: 130px;
+        height: 150px;
+        display: none;
+        margin-top: 0;
+        padding: 19px 15px;
+    }
+    #check:checked~.nav_bar_links{
+        overflow: auto;
+    }
+
+    .filled_btn{
+        display: none;
     }
 
 
     .nav_bar_links ul li a{
         color: black;
+    }
+
+    .nav_bar_links ul{
+        overflow: auto;
     }
 
 
@@ -240,10 +300,13 @@
     .ham{
         visibility: visible;
         color: black;
+        font-size: 24px;
+
     }
 
     #check:checked ~ .nav_bar_links ul{
         left: 0px;
+        overflow: auto;
     }
     /* #check:checked~ .nav_bar_links .hambug{
         display: block;
@@ -259,7 +322,29 @@
         display: block;
         color: black;
     }
+    .nav_product{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
+    #click:checked ~ .dropdown ul{
+        display: flex;
+        position: relative;
+        overflow: auto;
+        top: 20px;
+
+
+    }
+
+    #check:checked~ul{
+        left: 0%;
+    }
+
+    #check:checked~label i::before{
+        content: '\f00d';
+
+    }
     .nav_bar{
         display: flex;
     }
@@ -331,6 +416,10 @@
         flex-direction: column;
         display: flex;
     }
+
+    /* .cart_icon{
+        left: 14%;
+    } */
     .rating{
         padding-left: 0;
     }
@@ -354,17 +443,14 @@
         flex-direction: column;
         display: flex;
     }
-    
-    
-}
-
-@media only screen and (max-width:420px){
-    .Activity .introduction{
-        /* padding-right: 205px; */
+    .end{
+        padding-left: 10px;
     }
-
+    
     
 }
+
+
 
 @media only screen and (max-width:370px){
     .Activity .introduction{
@@ -382,8 +468,18 @@
     .end h6{
         text-align: center;
     }
-    .company_info{
+    .company_info {
         padding-left: none;
         grid-template-columns: repeat(1,1fr);
+        
+    }
+
+    .co_details h5 a{
+        transition: all ease 0.3s;
+    }
+
+    .company_info .co_details h5 a:hover{
+        color: #1BA0AB;
+        transition: all ease 0.3s;
     }
 }
