@@ -1230,6 +1230,9 @@ h2 {
 .s_media .icon {
     font-size: 23px;
 }
+.s_media a{
+    color: #1BA0ABgit ;
+}
 
 .end h6 {
     color: #737373;
