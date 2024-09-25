@@ -705,6 +705,10 @@ h2 {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
 }
+.over_view i{
+    font-size: 12px;
+    
+}
 
 
 
@@ -718,6 +722,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 5px;
 }
 
 .over_view .progress {
@@ -733,12 +738,14 @@ h2 {
 }
 
 .over_view p {
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 400;
 }
 
 .over_view .lesson .icon {
     color: #E77C40;
+    font-size: 10px;
+    padding: 0;
 }
 
 .over_view .progress .icon {
@@ -839,8 +846,7 @@ h2 {
 .icon {
     background: white;
     border-radius: 71px;
-    width: 40px;
-    height: 40px;
+    padding: 10px;
     justify-content: center;
     align-items: center;
     display: flex;
